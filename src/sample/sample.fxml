@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="przycisk" layoutX="530.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleClick" text="Dodaj" />
+      <TextField fx:id="textfieldImie" layoutX="10.0" layoutY="383.0" prefHeight="25.0" prefWidth="95.0" />
+      <TextField fx:id="textfieldNazwisko" layoutX="115.0" layoutY="383.0" prefHeight="25.0" prefWidth="95.0" />
+      <TextField fx:id="textfieldPesel" layoutX="220.0" layoutY="383.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="45.0" layoutY="410.0" text="Imię" />
+      <Label layoutX="135.0" layoutY="410.0" text="Nazwisko" />
+      <Label layoutX="250.0" layoutY="410.0" text="Pesel" />
+      <TableView fx:id="table" layoutX="10.0" layoutY="40.0" prefHeight="328.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="columnImie" text="Imię" />
+          <TableColumn fx:id="columnNazwisko" text="Nazwisko" />
+            <TableColumn fx:id="columnPesel" prefWidth="106.0" text="PESEL" />
+            <TableColumn fx:id="columnWiek" prefWidth="75.0" text="Wiek" />
+            <TableColumn fx:id="columnWzrost" prefWidth="73.0" text="Wzrost" />
+            <TableColumn fx:id="columnUsun" prefWidth="78.0" text="Usuń" />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="6.0" text="Dane osobowe">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldWiek" layoutX="325.0" layoutY="383.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="355.0" layoutY="410.0" text="Wiek" />
+      <TextField fx:id="textfieldWzrost" layoutX="425.0" layoutY="383.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label layoutX="455.0" layoutY="410.0" text="Wzrost" />
+   </children>
+</Pane>
